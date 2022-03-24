@@ -22,4 +22,3 @@ phases:
 artifacts:
   files:
     - '**/*'
-Next, change your Django project by replacing the debug page with your own h
