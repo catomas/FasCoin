@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      python: 3.7
+    commands:
+      # Install dependencies needed for running tests
+      - echo Installing dependencies
+      - pip install -r PyChain/requirements.txt
+
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Running tests
+      - python3 PyChain/manage.py test
+
+  post_build:
+    commands:
+      - echo Build completed on `date`
+
+artifacts:
+  files:
+    - '**/*'
+Next, change your Django project by replacing the debug page with your own h
