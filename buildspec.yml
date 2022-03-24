@@ -15,7 +15,7 @@ phases:
       - echo Running tests
       - python PyChain/manage.py test
 
-  post_build:
+  post_build: 
     commands:
       - echo Build completed on `date`
 
