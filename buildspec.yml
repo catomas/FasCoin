@@ -13,7 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Running tests
-      - python3 PyChain/manage.py test
+      - python3 PyChain/manage.py runserver
 
   post_build:
     commands:
